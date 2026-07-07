@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plano de Ensino — TypeScript do Zero ao Avançado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Link de acessibilidade: permite pular a navegação e ir direto ao conteúdo. -->
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegação principal">
+      <a class="brand" href="#topo">TypeScript Study</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-principal">
+        Menu
+      </button>
+      <ul id="menu-principal" class="nav-links">
+        <li><a href="#ementa">Ementa</a></li>
+        <li><a href="#fases">Fases</a></li>
+        <li><a href="#materias">Matérias</a></li>
+        <li><a href="#programa">Programa</a></li>
+        <li><a href="#cronograma">Cronograma</a></li>
+        <li><a href="#pratica">Prática</a></li>
+        <li><a href="#exercicios">Exercícios</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <!-- Hero: primeira área do site, com chamada principal e imagem de apoio. -->
+    <section id="topo" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Plano de ensino completo</p>
+        <h1>Plano de Ensino — TypeScript do Zero ao Avançado</h1>
+        <p class="hero-text">
+          Um roteiro didático, progressivo e prático para aprender TypeScript mesmo começando sem experiência prévia com a linguagem.
+        </p>
+        <div class="hero-actions" aria-label="Ações principais">
+          <a class="button primary" href="#programa">Começar pelos conteúdos</a>
+          <a class="button secondary" href="#projeto-final">Ver projeto final</a>
+        </div>
+      </div>
+      <figure class="hero-media">
+        <img src="assets/hero-typescript.png" alt="Mesa de estudos moderna com notebook e elementos visuais de programação">
+      </figure>
+    </section>
+
+    <!-- Apresentação: explica o assunto antes de entrar nos tópicos técnicos. -->
+    <section class="section intro" aria-labelledby="apresentacao-titulo">
+      <div class="section-heading">
+        <p class="eyebrow">Apresentação</p>
+        <h2 id="apresentacao-titulo">O que é TypeScript?</h2>
+      </div>
+      <div class="two-column">
+        <p>
+          TypeScript é uma linguagem criada sobre o JavaScript. Isso significa que todo código JavaScript válido pode ser usado em TypeScript, mas o TypeScript acrescenta um recurso muito importante: tipos.
+        </p>
+        <p>
+          Os tipos ajudam você a explicar ao computador, ao editor e a outras pessoas que tipo de dado uma variável, função ou objeto deve receber. Em projetos web, isso reduz erros, melhora a leitura do código e torna a manutenção mais segura.
+        </p>
+      </div>
+    </section>
+
+    <section id="ementa" class="section soft-band" aria-labelledby="ementa-titulo">
+      <div class="section-heading">
+        <p class="eyebrow">Ementa</p>
+        <h2 id="ementa-titulo">Conteúdos que serão estudados</h2>
+      </div>
+      <div class="pill-grid">
+        <span>Introdução ao TypeScript</span>
+        <span>JavaScript x TypeScript</span>
+        <span>Tipagem estática</span>
+        <span>Tipos primitivos</span>
+        <span>Arrays, objetos e funções</span>
+        <span>Interfaces e Types</span>
+        <span>Classes</span>
+        <span>Generics</span>
+        <span>Union Types e Literal Types</span>
+        <span>Narrowing</span>
+        <span>Modules</span>
+        <span>TypeScript com HTML/CSS/JS</span>
+        <span>Projetos front-end</span>
+        <span>Boas práticas</span>
+        <span>Projeto final</span>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="objetivos-titulo">
+      <div class="section-heading">
+        <p class="eyebrow">Objetivos pedagógicos</p>
+        <h2 id="objetivos-titulo">O que você deve aprender</h2>
+      </div>
+      <div class="objective-layout">
+        <article class="panel accent">
+          <h3>Objetivo geral</h3>
+          <p>
+            Desenvolver a capacidade de criar, entender e organizar códigos em TypeScript, aplicando tipos, funções, objetos, interfaces, classes e boas práticas em projetos web.
+          </p>
+        </article>
+        <article class="panel">
+          <h3>Objetivos específicos</h3>
+          <ul class="check-list">
+            <li>Compreender a relação entre JavaScript e TypeScript.</li>
+            <li>Declarar variáveis, funções e objetos com tipos.</li>
+            <li>Usar interfaces, types, classes e generics.</li>
+            <li>Compilar arquivos TypeScript para JavaScript.</li>
+            <li>Criar um projeto prático com organização e responsividade.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Cards interativos: cada fase pode receber destaque por hover, foco ou clique. -->
+    <section id="fases" class="section soft-band" aria-labelledby="fases-titulo">
+      <div class="section-heading">
+        <p class="eyebrow">Fases do curso</p>
+        <h2 id="fases-titulo">Do primeiro contato ao projeto final</h2>
+      </div>
+      <div class="module-grid">
+        <article class="module-card" tabindex="0">
+          <span>Fase 1</span>
+          <h3>Fundamentos</h3>
+          <p>Entender o que é TypeScript, instalar ferramentas e escrever os primeiros tipos.</p>
+        </article>
+        <article class="module-card" tabindex="0">
+          <span>Fase 2</span>
+          <h3>Tipos e funções</h3>
+          <p>Aprender tipos primitivos, arrays, parâmetros, retorno e validações simples.</p>
+        </article>
+        <article class="module-card" tabindex="0">
+          <span>Fase 3</span>
+          <h3>Objetos e classes</h3>
+          <p>Organizar dados com objetos, interfaces, types, classes e métodos.</p>
+        </article>
+        <article class="module-card" tabindex="0">
+          <span>Fase 4</span>
+          <h3>Recursos intermediários</h3>
+          <p>Explorar union types, literal types, narrowing, módulos e organização de arquivos.</p>
+        </article>
+        <article class="module-card" tabindex="0">
+          <span>Fase 5</span>
+          <h3>TypeScript avançado</h3>
+          <p>Usar generics, utility types, boas práticas e padrões comuns de projeto.</p>
+        </article>
+        <article class="module-card" tabindex="0">
+          <span>Fase 6</span>
+          <h3>Projeto prático final</h3>
+          <p>Construir um sistema de cadastro de estudos usando tipos, arrays e funções.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Matérias em pop-up: cada botão abre uma aula guiada com explicação e atividade. -->
+    <section id="materias" class="section" aria-labelledby="materias-titulo">
+      <div class="section-heading">
+        <p class="eyebrow">Matérias passo a passo</p>
+        <h2 id="materias-titulo">Clique em um tema para estudar</h2>
+        <p class="section-description">
+          Esta área funciona como um mapa de aulas rápidas. Ao clicar em um tema, você verá a explicação, uma sequência de estudo e uma atividade prática para fazer no VS Code.
+        </p>
+      </div>
+      <div class="topic-grid">
+        <button class="topic-card" type="button" data-topic="introducao">
+          <span>Aula 1</span>
+          <strong>Introdução ao TypeScript</strong>
+          <small>Entenda a linguagem antes de escrever código.</small>
+        </button>
+        <button class="topic-card" type="button" data-topic="tipos">
+          <span>Aula 2</span>
+          <strong>Tipos primitivos</strong>
+          <small>Aprenda string, number, boolean e arrays.</small>
+        </button>
+        <button class="topic-card" type="button" data-topic="funcoes">
+          <span>Aula 3</span>
+          <strong>Funções tipadas</strong>
+          <small>Controle entradas e saídas das funções.</small>
+        </button>
+        <button class="topic-card" type="button" data-topic="objetos">
+          <span>Aula 4</span>
+          <strong>Objetos e interfaces</strong>
+          <small>Modele dados reais com segurança.</small>
+        </button>
+        <button class="topic-card" type="button" data-topic="classes">
+          <span>Aula 5</span>
+          <strong>Classes</strong>
+          <small>Organize propriedades e métodos.</small>
+        </button>
+        <button class="topic-card" type="button" data-topic="generics">
+          <span>Aula 6</span>
+          <strong>Generics</strong>
+          <small>Crie funções reaproveitáveis e seguras.</small>
+        </button>
+        <button class="topic-card" type="button" data-topic="narrowing">
+          <span>Aula 7</span>
+          <strong>Narrowing</strong>
+          <small>Trate tipos diferentes com verificações.</small>
+        </button>
+        <button class="topic-card" type="button" data-topic="projeto">
+          <span>Aula 8</span>
+          <strong>Projeto prático</strong>
+          <small>Monte o cadastro de estudos passo a passo.</small>
+        </button>
+      </div>
+    </section>
+
+    <section id="programa" class="section" aria-labelledby="programa-titulo">
+      <div class="section-heading">
+        <p class="eyebrow">Conteúdo programático</p>
+        <h2 id="programa-titulo">Explicação simples, exemplo e prática</h2>
+      </div>
+      <div class="lesson-list">
+        <article class="lesson">
+          <h3>1. Tipos primitivos</h3>
+          <p><strong>Conceito:</strong> tipos básicos como <code>string</code>, <code>number</code> e <code>boolean</code>.</p>
+          <p><strong>Para que serve:</strong> evitar que uma variável receba um valor inesperado.</p>
+          <pre><code>let nome: string = "Ana";
+let idade: number = 20;
+let estudando: boolean = true;</code></pre>
+          <p><strong>Exercício:</strong> crie três variáveis tipadas com seu nome, sua idade e se você já estudou JavaScript.</p>
+        </article>
+
+        <article class="lesson">
+          <h3>2. Funções tipadas</h3>
+          <p><strong>Conceito:</strong> funções podem ter tipos nos parâmetros e no retorno.</p>
+          <p><strong>Para que serve:</strong> deixar claro o que a função recebe e devolve.</p>
+          <pre><code>function somar(a: number, b: number): number {
+  return a + b;
+}</code></pre>
+          <p><strong>Exercício:</strong> crie uma função que receba o nome de um curso e retorne uma mensagem de boas-vindas.</p>
+        </article>
+
+        <article class="lesson">
+          <h3>3. Objetos, interfaces e types</h3>
+          <p><strong>Conceito:</strong> interfaces e types descrevem o formato de um objeto.</p>
+          <p><strong>Para que serve:</strong> padronizar dados, como aluno, produto ou conteúdo estudado.</p>
+          <pre><code>interface Aluno {
+  nome: string;
+  nivel: "iniciante" | "intermediario" | "avancado";
+}</code></pre>
+          <p><strong>Exercício:</strong> crie uma interface para representar um livro de estudos.</p>
+        </article>
+
+        <article class="lesson">
+          <h3>4. Generics</h3>
+          <p><strong>Conceito:</strong> generics criam funções reutilizáveis que preservam o tipo recebido.</p>
+          <p><strong>Para que serve:</strong> evitar repetição sem perder segurança de tipos.</p>
+          <pre><code>function primeiroItem&lt;T&gt;(lista: T[]): T {
+  return lista[0];
+}</code></pre>
+          <p><strong>Exercício:</strong> crie uma função generic que receba uma lista e retorne o último item.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Cronograma: tabela para organizar a sequência de aulas. -->
+    <section id="cronograma" class="section soft-band" aria-labelledby="cronograma-titulo">
+      <div class="section-heading">
+        <p class="eyebrow">Cronograma</p>
+        <h2 id="cronograma-titulo">Plano com 12 aulas</h2>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Aula</th>
+              <th>Tema</th>
+              <th>Conteúdo</th>
+              <th>Atividade prática</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Introdução</td><td>O que é TypeScript e por que usar</td><td>Instalar ferramentas</td></tr>
+            <tr><td>2</td><td>Ambiente</td><td>Node.js, npm, tsc e arquivos .ts</td><td>Compilar o primeiro arquivo</td></tr>
+            <tr><td>3</td><td>Tipos básicos</td><td>string, number, boolean, null e undefined</td><td>Criar variáveis tipadas</td></tr>
+            <tr><td>4</td><td>Arrays</td><td>Listas tipadas e métodos comuns</td><td>Montar lista de estudos</td></tr>
+            <tr><td>5</td><td>Funções</td><td>Parâmetros, retorno e optional parameters</td><td>Criar funções de cálculo</td></tr>
+            <tr><td>6</td><td>Objetos</td><td>Objetos literais e propriedades opcionais</td><td>Modelar um conteúdo estudado</td></tr>
+            <tr><td>7</td><td>Interfaces</td><td>Contratos para objetos</td><td>Criar interface Aluno</td></tr>
+            <tr><td>8</td><td>Types</td><td>Alias, union e literal types</td><td>Definir status de estudo</td></tr>
+            <tr><td>9</td><td>Classes</td><td>Construtor, métodos e encapsulamento</td><td>Criar classe Curso</td></tr>
+            <tr><td>10</td><td>Narrowing</td><td>Verificações de tipo em tempo de execução</td><td>Validar dados de formulário</td></tr>
+            <tr><td>11</td><td>Generics</td><td>Funções reutilizáveis e tipadas</td><td>Criar filtro genérico</td></tr>
+            <tr><td>12</td><td>Projeto final</td><td>Cadastro de estudos em TypeScript</td><td>Integrar tipos, funções e arrays</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="pratica" class="section" aria-labelledby="pratica-titulo">
+      <div class="section-heading">
+        <p class="eyebrow">TypeScript na prática</p>
+        <h2 id="pratica-titulo">Exemplos para ler, copiar e testar</h2>
+      </div>
+      <div class="code-grid">
+        <article class="code-card">
+          <h3>Variáveis e funções</h3>
+          <pre><code>const curso: string = "TypeScript";
+
+function criarMensagem(nome: string): string {
+  return `Olá, ${nome}! Vamos estudar ${curso}.`;
+}</code></pre>
+        </article>
+        <article class="code-card">
+          <h3>Objeto com interface</h3>
+          <pre><code>interface Produto {
+  nome: string;
+  preco: number;
+}
+
+const livro: Produto = {
+  nome: "Guia de TypeScript",
+  preco: 59.9
+};</code></pre>
+        </article>
+        <article class="code-card">
+          <h3>Classe</h3>
+          <pre><code>class Aluno {
+  constructor(public nome: string) {}
+
+  apresentar(): string {
+    return `${this.nome} está aprendendo TypeScript.`;
+  }
+}</code></pre>
+        </article>
+        <article class="code-card">
+          <h3>Generic</h3>
+          <pre><code>function listar&lt;T&gt;(itens: T[]): T[] {
+  return itens;
+}
+
+listar&lt;string&gt;(["Tipos", "Funções", "Classes"]);</code></pre>
+        </article>
+      </div>
+    </section>
+
+    <section id="exercicios" class="section soft-band" aria-labelledby="exercicios-titulo">
+      <div class="section-heading">
+        <p class="eyebrow">Exercícios</p>
+        <h2 id="exercicios-titulo">Pratique por nível</h2>
+      </div>
+      <div class="exercise-grid">
+        <article class="exercise">
+          <h3>Básico</h3>
+          <p><strong>Enunciado:</strong> crie variáveis tipadas para nome, idade e status de matrícula.</p>
+          <p><strong>Dica:</strong> use <code>string</code>, <code>number</code> e <code>boolean</code>.</p>
+          <p><strong>Objetivo:</strong> entender tipos primitivos.</p>
+        </article>
+        <article class="exercise">
+          <h3>Intermediário</h3>
+          <p><strong>Enunciado:</strong> crie uma interface <code>Conteudo</code> e uma função que liste conteúdos concluídos.</p>
+          <p><strong>Dica:</strong> use arrays e literal types para o status.</p>
+          <p><strong>Objetivo:</strong> organizar objetos com contratos de tipo.</p>
+        </article>
+        <article class="exercise">
+          <h3>Avançado</h3>
+          <p><strong>Enunciado:</strong> crie uma função generic para buscar itens por propriedade.</p>
+          <p><strong>Dica:</strong> pesquise <code>keyof</code> e generics com restrições.</p>
+          <p><strong>Objetivo:</strong> criar funções reutilizáveis com segurança.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projeto final: conecta todos os conceitos em uma proposta prática. -->
+    <section id="projeto-final" class="section project" aria-labelledby="projeto-titulo">
+      <div class="section-heading">
+        <p class="eyebrow">Projeto final</p>
+        <h2 id="projeto-titulo">Sistema de Cadastro de Estudos em TypeScript</h2>
+      </div>
+      <div class="project-layout">
+        <div>
+          <p>
+            O projeto final será um sistema simples para registrar conteúdos estudados. A ideia é praticar tipos, interfaces, funções e arrays em um contexto real.
+          </p>
+          <ul class="check-list">
+            <li>Cadastro de conteúdos estudados.</li>
+            <li>Nível de dificuldade: básico, intermediário ou avançado.</li>
+            <li>Status: não iniciado, em andamento ou concluído.</li>
+            <li>Lista de estudos renderizada na tela.</li>
+            <li>Uso de tipos, interfaces, funções e arrays.</li>
+          </ul>
+        </div>
+        <pre><code>type Status = "não iniciado" | "em andamento" | "concluído";
+
+interface Estudo {
+  titulo: string;
+  dificuldade: "básico" | "intermediário" | "avançado";
+  status: Status;
+}</code></pre>
+      </div>
+    </section>
+
+    <section class="section soft-band" aria-labelledby="avaliacao-titulo">
+      <div class="section-heading">
+        <p class="eyebrow">Avaliação</p>
+        <h2 id="avaliacao-titulo">Critérios de acompanhamento</h2>
+      </div>
+      <div class="criteria-grid">
+        <span>Organização do código</span>
+        <span>Uso correto de tipos</span>
+        <span>Clareza dos nomes de variáveis</span>
+        <span>Responsividade</span>
+        <span>Criatividade</span>
+        <span>Funcionamento do projeto final</span>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="recursos-titulo">
+      <div class="section-heading">
+        <p class="eyebrow">Recursos e execução</p>
+        <h2 id="recursos-titulo">Ferramentas e passo a passo</h2>
+      </div>
+      <div class="steps-layout">
+        <article class="panel">
+          <h3>Recursos necessários</h3>
+          <ul class="check-list">
+            <li>VS Code</li>
+            <li>Navegador</li>
+            <li>Node.js</li>
+            <li>TypeScript instalado</li>
+            <li>Git e GitHub</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h3>Passo a passo</h3>
+          <ol class="number-list">
+            <li>Clone ou baixe este projeto.</li>
+            <li>Abra a pasta no VS Code.</li>
+            <li>Instale o TypeScript com <code>npm install -g typescript</code>.</li>
+            <li>Compile arquivos <code>.ts</code> com <code>tsc typescript/basico.ts</code>.</li>
+            <li>Abra o <code>index.html</code> no navegador.</li>
+            <li>Publique no GitHub Pages pela aba Settings &gt; Pages.</li>
+          </ol>
+        </article>
+      </div>
+    </section>
+
+    <section class="section references" aria-labelledby="referencias-titulo">
+      <div class="section-heading">
+        <p class="eyebrow">Referências</p>
+        <h2 id="referencias-titulo">Links úteis para continuar</h2>
+      </div>
+      <div class="reference-links">
+        <a href="https://www.typescriptlang.org/docs/" target="_blank" rel="noreferrer">Documentação oficial do TypeScript</a>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank" rel="noreferrer">MDN JavaScript</a>
+        <a href="https://pages.github.com/" target="_blank" rel="noreferrer">GitHub Pages</a>
+        <a href="https://www.w3schools.com/typescript/" target="_blank" rel="noreferrer">W3Schools TypeScript</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Material de estudo criado para aprender TypeScript com calma, prática e organização.</p>
+  </footer>
+
+  <!-- Pop-up de estudo. O conteúdo interno é preenchido pelo JavaScript conforme o tema clicado. -->
+  <div class="modal" id="topic-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="modal-panel">
+      <button class="modal-close" type="button" data-close-modal aria-label="Fechar matéria">×</button>
+      <p class="eyebrow" id="modal-label">Matéria guiada</p>
+      <h2 id="modal-title"></h2>
+      <p class="modal-intro" id="modal-intro"></p>
+
+      <div class="modal-section">
+        <h3>Passo a passo</h3>
+        <ol class="number-list" id="modal-steps"></ol>
+      </div>
+
+      <div class="modal-section">
+        <h3>Exemplo de código</h3>
+        <pre><code id="modal-code"></code></pre>
+      </div>
+
+      <div class="modal-section activity-box">
+        <h3>Atividade prática</h3>
+        <p id="modal-activity"></p>
+        <p><strong>Objetivo de aprendizagem:</strong> <span id="modal-goal"></span></p>
+      </div>
+    </article>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
